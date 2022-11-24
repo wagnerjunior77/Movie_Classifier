@@ -9,7 +9,7 @@ def get_movies_from_tastedive(movie):
     params_dict['q'] = movie
 
     params_dict['type'] = 'movies'
-    params_dict['k'] = '444988-MoviesCl-XXD177GQ'
+    params_dict['k'] = 'your key'
     params_dict['limit'] = 5
 
     taste_resp = requests.get(url_data, params = params_dict)
@@ -43,7 +43,7 @@ movie_list = extract_movie_titles(movie_data)
 
 #getting the data of the movies
 rating_list = []
-key = "ef7b983c"
+key = "your key"
 c = 0
 for r in movie_list:
     url_data = f"http://www.omdbapi.com/?apikey={key}&"
